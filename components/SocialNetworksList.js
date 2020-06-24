@@ -4,12 +4,12 @@ import dynamic from 'next/dynamic';
 import { socialNetworkList } from '../constants/social-networks';
 import { Fragment } from 'react';
 
-const SocialNetworkButton = ({ image, href, className }) => {
+const SocialNetworkButton = ({ image, url, name, className }) => {
   const SVG = dynamic(() => import(`../public/assets/${image}.svg`));
 
   return (
     <>
-      <a href={href} className={className}>
+      <a href={url} className={className} aria-label={name}>
         <SVG />
       </a>
 
@@ -55,7 +55,7 @@ const SocialNetworksList = ({
   const List = filteredSocialNetworks.map((socialNetwork) => {
     return (
       <Fragment key={socialNetwork.id}>
-        <SocialNetworkButton image={socialNetwork.id} href={socialNetwork.url} className={socialNetworkClassName} />
+        <SocialNetworkButton {...socialNetwork} image={socialNetwork.id} className={socialNetworkClassName} />
         {socialNetworkStyles}
       </Fragment>
     );

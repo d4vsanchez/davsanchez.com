@@ -11,6 +11,19 @@ const Layout = ({ title = '', children }) => {
           href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.ico" />
+
+        <meta name="description" content="David Sánchez is a Developer by passion. This is his personal website" />
+        <meta name="og:title" content={title} />
+        <meta name="og:description" content="David Sánchez is a Developer by passion. This is his personal website" />
+        <meta name="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@d4vsanchez" />
+        <meta name="twitter:title" content={title} />
+        <meta
+          name="twitter:description"
+          content="David Sánchez is a Developer by passion. This is his personal website"
+        />
       </Head>
 
       <main>{children}</main>

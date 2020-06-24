@@ -1,9 +1,11 @@
 const path = require('path');
-const withReactSvg = require('next-react-svg')
+const withReactSvg = require('next-react-svg');
 
-module.exports = withReactSvg({
+const nextConfig = {
   include: path.resolve(__dirname, 'public/assets'),
   webpack(config) {
-    return config
-  }
-})
+    return config;
+  },
+};
+
+module.exports = withReactSvg(nextConfig);

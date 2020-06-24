@@ -1,6 +1,6 @@
 const Post = ({ title, url, description, published_timestamp, readable_publish_date }) => {
   return (
-    <a href={url}>
+    <a href={url} aria-label={title}>
       <article>
         <h3>{title}</h3>
         <p className="description">{description}</p>
