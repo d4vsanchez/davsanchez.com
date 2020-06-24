@@ -1,4 +1,6 @@
 const path = require('path');
+
+const withOffline = require('next-offline');
 const withReactSvg = require('next-react-svg');
 
 const nextConfig = {
@@ -8,4 +10,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withReactSvg(nextConfig);
+module.exports = withOffline(withReactSvg(nextConfig));
