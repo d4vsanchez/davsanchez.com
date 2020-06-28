@@ -26,32 +26,46 @@ const Layout = ({ title = '', children }) => {
         />
       </Head>
 
-      <main>{children}</main>
+      <div className="page-container">
+        <main>{children}</main>
 
-      <footer>
-        <div className="content">
-          <Footer />
-        </div>
-      </footer>
+        <footer>
+          <div className="content">
+            <Footer />
+          </div>
+        </footer>
+      </div>
 
       <style jsx>{`
         main {
-          padding: 0 1rem;
           margin: 0 auto;
           max-width: 600px;
+          overflow: hidden;
+          padding: 0 1rem;
+          padding-bottom: calc(150px + 2rem);
           width: 100%;
         }
 
         footer {
+          align-items: center;
           background: var(--gray-dark);
+          bottom: 0;
+          display: flex;
+          height: 150px;
           padding: 1rem 0;
-          margin-top: 2rem;
+          position: absolute;
+          width: 100%;
         }
 
         footer .content {
           margin: 0 auto;
           padding: 0 1rem;
           max-width: 600px;
+        }
+
+        .page-container {
+          min-height: 100vh;
+          position: relative;
         }
       `}</style>
 
