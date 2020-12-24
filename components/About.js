@@ -9,14 +9,34 @@ const About = () => {
         I’m a Developer by passion. With a background in Software Engineering, I’m constantly learning and sharing about
         the latest tech stacks out there.
       </p>
+
       <p>
-        I’m currently the Lead Front-end Developer at <a href="https://ubidots.com">Ubidots</a>. It’s one of the top IoT
-        platforms in the market, empowering more than 40.000 applications from thousands ofr developers around the
-        world.
+        I’m currently a Sr. Front End Developer at{' '}
+        <a href="https://gorillalogic.com/" target="_blank" rel="noopener noreferrer">
+          Gorilla Logic
+        </a>
+        .
+      </p>
+
+      <p>
+        I was previously employed at:
+        <ul>
+          <li>
+            <a href="https://ubidots.com" target="_blank" rel="noopener noreferrer">
+              Ubidots
+            </a>
+          </li>
+        </ul>
       </p>
       <p>You can find me on the following social networks:</p>
 
       <SocialNetworksList />
+
+      <style jsx>{`
+        ul {
+          padding: 0 1rem;
+        }
+      `}</style>
     </>
   );
 };
