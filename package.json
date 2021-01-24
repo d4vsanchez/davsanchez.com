@@ -9,7 +9,7 @@
     "lint": "yarn lint:eslint"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "next": "^10.0.0",
     "next-react-svg": "^1.1.1",
     "react": "16.13.1",
