@@ -1,11 +1,12 @@
 {
   "name": "davsanchez.com",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint:eslint": "yarn run eslint --ext .js .",
+    "lint": "yarn lint:eslint"
   },
   "dependencies": {
     "axios": "^0.19.2",
