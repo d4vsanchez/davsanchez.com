@@ -3,7 +3,7 @@ const socialNetworks = {
   dev: { name: 'Dev', url: 'https://dev.to/d4vsanchez' },
   twitter: { name: 'Twitter', url: 'https://twitter.com/d4vsanchez' },
   instagram: { name: 'Instagram', url: 'https://instagram.com/d4vsanchez' },
-  linkedin: { name: 'LinkedIn', url: 'https://linkedin.com/juandavidsanchez' },
+  linkedin: { name: 'LinkedIn', url: 'https://linkedin.com/in/juandavidsanchez' },
 };
 
 export const socialNetworkList = (() => {
